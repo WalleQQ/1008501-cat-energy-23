@@ -1,0 +1,39 @@
+.address__wrapper {
+  width: 320px;
+  padding-top: 28px;
+  margin: 0 auto;
+  &--background {
+    background: $basic-grey;
+  }
+}
+
+.address__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.address__text {
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $special-black;
+  text-transform: uppercase;
+  width: 139px;
+  margin-bottom: 26px;
+}
+
+.address__address {
+  font-family: Arial;
+  font-style: normal;
+  width: 140px;
+}
+
+.map iframe {
+  width: 320px;
+}
+
+.map {
+  margin: 0;
+}

@@ -1,0 +1,86 @@
+.diets__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.diets__field-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.diets__field-item {
+  background: $basic-grey;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &:last-child {
+    margin-bottom: 23px;
+  }
+}
+
+.diets__field-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $basic-black;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-top: 30px;
+  padding-left: 91px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 22px;
+    top: 24px;
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+  &--slim::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    background: url(/1008501-cat-energy-23/source/img/diets/cat-slim.svg)
+      no-repeat;
+    left: 29px;
+    top: 21px;
+  }
+  &--pro::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    background: url(/1008501-cat-energy-23/source/img/diets/cat-pro.svg)
+      no-repeat;
+    left: 13px;
+    top: 35px;
+  }
+}
+
+.diets__field-content {
+  font-family: arial;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 20px 23px 20px;
+  border-bottom: 1px solid $special-border-grey;
+}
+
+.diets__field-button {
+  display: inline-block;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+  color: $basic-black;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 5px 47px 0 20px;
+  background: url(/1008501-cat-energy-23/source/img/diets/icon_arrow.svg)
+    no-repeat right;
+}

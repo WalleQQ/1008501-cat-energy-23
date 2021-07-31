@@ -1,0 +1,117 @@
+.catalog__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+.catalog__heading {
+  margin: 0;
+  padding: 0 20px;
+  margin-top: 27px;
+  padding-bottom: 41px;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+  font-weight: 400;
+  border-bottom: 1px solid $special-border-grey;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3;
+  padding: 0 20px;
+  border-bottom: 1px solid $special-border-grey;
+}
+
+.catalog__item-image {
+  margin: 0;
+  margin-top: 33px;
+  grid-row: 1 / 3;
+}
+
+.catalog__product-title {
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 14px;
+  width: 76px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+  grid-row: 1 / 2;
+}
+
+.catalog__product-table {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+  grid-row: 2 / 3;
+  margin-bottom: 22px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.catalog__product-content {
+  width: 67.5%;
+  font-weight: 400;
+}
+
+.catalog__product-button {
+  grid-column: 1 / -1;
+  margin-bottom: 25px;
+}
+
+.catalog__show-more {
+  padding: 0 20px;
+  border-bottom: 1px solid $special-border-bar;
+}
+
+.catalog__show-more-button {
+  margin: 39px 125px;
+  position: relative;
+  border: none;
+  width: 30px;
+  height: 2px;
+  background-color: $special-catalog-button;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1%;
+    width: 30px;
+    height: 2px;
+    transform: rotate(90deg);
+    background-color: $special-catalog-button;
+  }
+}
+
+.catalog__show-more-content {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.catalog__show-more-text {
+  margin: 0;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.catalog__show-all-button {
+  padding: 0;
+  padding: 10px 94px;
+  background: $basic-grey;
+  color: $special-dark-grey;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  color: $basic-white;
+  background-color: $basic-green;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 72px;
+}
