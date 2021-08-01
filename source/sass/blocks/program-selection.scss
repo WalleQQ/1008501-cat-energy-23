@@ -64,12 +64,12 @@
   padding: 13px 15px;
   outline: 1px solid black;
   &--email {
-    background: url(/1008501-cat-energy-23/source/img/program-selection/icon_email.svg)
-      no-repeat 95% 50%;
+    background: url("../../img/program-selection/icon_email.svg") no-repeat 95%
+      50%;
   }
   &--phone {
-    background: url(/1008501-cat-energy-23/source/img/program-selection/icon_phone.svg)
-      no-repeat 95% 50%;
+    background: url("../../img/program-selection/icon_phone.svg") no-repeat 95%
+      50%;
   }
 }
 
@@ -242,8 +242,8 @@
   + .program-selection__checkbox-text::after {
   content: "";
   position: absolute;
-  background: url(/1008501-cat-energy-23/source/img/program-selection/checkbox-active.svg)
-    no-repeat 50% 50%;
+  background: url("../../img/program-selection/checkbox-active.svg") no-repeat
+    50% 50%;
   width: 18px;
   height: 14px;
   top: 50%;

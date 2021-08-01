@@ -54,15 +54,29 @@
 .example__cost {
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
   color: $basic-black;
   text-transform: uppercase;
 }
 
+.example__before-after {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .example__before-button,
 .example__after-button {
+  padding: 0;
   border: none;
   background: none;
   color: $basic-black;
+  &.example__before-button {
+    margin-left: 38px;
+  }
+  &.example__after-button {
+    margin-right: 38px;
+  }
 }
 
 .example__scale {
@@ -81,10 +95,4 @@
   height: 6px;
   background: $basic-green;
   border-radius: 6px;
-}
-
-.example__before-after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
