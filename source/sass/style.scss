@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// Global //
+
+@import "global/normalize";
+@import "global/fonts";
+@import "global/colors";
+@import "global/content";
+@import "global/viewport";
+@import "global/mixins";
+
+// Blocks //
+
+@import "blocks/page";
+@import "blocks/page-body";
+@import "blocks/page-form-body";
+@import "blocks/page-header";
+@import "blocks/button";
+@import "blocks/promo";
+@import "blocks/diets";
+@import "blocks/about-product";
+@import "blocks/example";
+@import "blocks/address";
+@import "blocks/socials";
+
+// Page-form Blocks //
+@import "blocks/program-selection";
+
+// page-catalog Blocks
+@import "blocks/catalog";
+@import "blocks/additional-product";

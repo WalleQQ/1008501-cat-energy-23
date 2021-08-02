@@ -1,0 +1,45 @@
+.promo {
+  position: relative;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.promo__background {
+  margin-bottom: 138px;
+  background: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/promo/promo-background-desktop.jpg") no-repeat;
+}
+
+.promo__product-image {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.promo__title {
+  margin: 0;
+  padding-top: 27px;
+  color: $basic-white;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  color: $basic-white;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 164px;
+}
+
+.promo__button {
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 18px;
+}
