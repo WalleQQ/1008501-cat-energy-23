@@ -2,6 +2,7 @@
   width: 320px;
   padding-top: 28px;
   margin: 0 auto;
+
   &--background {
     background: $basic-grey;
   }
@@ -17,7 +18,6 @@
 .address__text {
   font-size: 16px;
   line-height: 20px;
-
   color: $special-black;
   text-transform: uppercase;
   width: 139px;
@@ -25,15 +25,11 @@
 }
 
 .address__address {
-  font-family: Arial;
+  font-family: $main-font;
   font-style: normal;
   width: 140px;
 }
 
-.map iframe {
+.address__map {
   width: 320px;
-}
-
-.map {
-  margin: 0;
 }

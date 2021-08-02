@@ -1,4 +1,4 @@
-.additional-product-wrapper {
+.additional-product__wrapper {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
@@ -7,6 +7,7 @@
 .additional-product__heading {
   margin-top: 25px;
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -20,19 +21,16 @@
 }
 
 .additional-product__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-zeroing;
 }
 
 .additional-product__item {
   display: grid;
   grid-template-columns: 1fr auto;
+  border-bottom: 1px solid $special-border-bar;
+
   &:first-child {
     border-top: 1px solid $special-border-bar;
-  }
-  & {
-    border-bottom: 1px solid $special-border-bar;
   }
 }
 
@@ -48,7 +46,7 @@
 }
 
 .additional-product__content {
-  font-family: Arial;
+  font-family: $main-font;
   font-size: 14px;
   line-height: 14px;
   margin: 0;
@@ -65,19 +63,19 @@
   width: 280px;
   height: 289px;
   margin-top: 36px;
-  background: url("../../img/additional-product/gift-photo-mobile.jpg")
-    no-repeat;
+  background: url("../img/additional-product/gift-photo-mobile.jpg") no-repeat;
   margin-bottom: 35px;
 }
 
 .additional-product__event-content {
   margin: 0;
-  font-family: Arial;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
   padding-top: 186px;
   text-align: center;
+
   &::before {
     content: "";
     position: absolute;
@@ -86,7 +84,6 @@
     top: 58px;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../../img/additional-product/icon_gift.svg") no-repeat 50%
-      50%;
+    background: url("../img/additional-product/icon_gift.svg") no-repeat 50% 50%;
   }
 }

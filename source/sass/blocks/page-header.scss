@@ -14,34 +14,43 @@
 }
 
 .main-nav__toggle {
-  position: relative;
   cursor: pointer;
+  background: inherit;
+  width: 24px;
+  height: 17.5px;
+  position: relative;
+}
+
+.main-nav__toggle-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 24px;
   height: 1.5px;
   border: none;
   background-color: $basic-black;
   transition: 0.5s;
-}
 
-.main-nav__toggle::before,
-.main-nav__toggle::after {
-  position: absolute;
-  width: 24px;
-  height: 1.5px;
-  border: none;
-  background-color: $basic-black;
-}
+  &::before,
+  &::after {
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    border: none;
+    background-color: $basic-black;
+  }
 
-.main-nav__toggle::before {
-  content: "";
-  bottom: 8px;
-  left: 0;
-}
+  &::before {
+    content: "";
+    bottom: 8px;
+    left: 0;
+  }
 
-.main-nav__toggle::after {
-  content: "";
-  bottom: -8px;
-  left: 0;
+  &::after {
+    content: "";
+    bottom: -8px;
+    left: 0;
+  }
 }
 
 .main-nav__menu {
@@ -55,39 +64,42 @@
   background-color: $basic-white;
 }
 
-.show-menu {
+.main-nav__menu--show-menu {
   display: block;
 }
 
-.close-menu {
-  position: relative;
+.main-nav__toggle-item--close-menu {
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
   cursor: pointer;
   width: 24px;
   height: 1.5px;
   border: none;
   background-color: $basic-black;
   transition: 0.5s;
-  transform: rotate(45deg);
+
   &::before {
     content: "";
     position: absolute;
     display: none;
   }
+
   &::after {
     content: "";
     position: absolute;
+    top: 0;
+    right: 0;
     width: 24px;
     height: 1.5px;
     background-color: $basic-black;
-    transform: rotate(-90deg);
-    top: 0;
+    transform: rotate(90deg);
+    transition: 0.5s;
   }
 }
 
 .main-nav__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  @include list-zeroing;
   color: $basic-black;
   font-weight: 500;
   font-size: 20px;

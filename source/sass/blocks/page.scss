@@ -5,26 +5,3 @@
   background-color: $basic-white;
   color: $special-dark-grey;
 }
-
-.page-body {
-  font-size: 14px;
-  line-height: 18px;
-  margin: 0;
-  padding: 0;
-}
-
-.page-form-body {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}

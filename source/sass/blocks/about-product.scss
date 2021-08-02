@@ -17,20 +17,21 @@
 }
 
 .about-product__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-zeroing;
 }
 
 .about-product__item {
   padding-left: 80px;
   position: relative;
+
   &:not(:last-child) {
     margin-bottom: 26px;
   }
+
   &:last-child {
     margin-bottom: 46px;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -40,6 +41,7 @@
     height: 60px;
     background-color: $basic-green;
   }
+
   &--leaf::after {
     content: "";
     position: absolute;
@@ -47,8 +49,9 @@
     left: 15px;
     width: 30px;
     height: 32px;
-    background: url("../../img/about-product/icon_leaf.svg") no-repeat;
+    background: url("../img/about-product/icon_leaf.svg") no-repeat;
   }
+
   &--tub::after {
     content: "";
     position: absolute;
@@ -56,8 +59,9 @@
     left: 15px;
     width: 29px;
     height: 31px;
-    background: url("../../img/about-product/icon_tub.svg") no-repeat;
+    background: url("../img/about-product/icon_tub.svg") no-repeat;
   }
+
   &--eat::after {
     content: "";
     position: absolute;
@@ -65,8 +69,9 @@
     left: 18px;
     width: 25px;
     height: 30px;
-    background: url("../../img/about-product/icon_eat.svg") no-repeat;
+    background: url("../img/about-product/icon_eat.svg") no-repeat;
   }
+
   &--alarm::after {
     content: "";
     position: absolute;
@@ -74,11 +79,11 @@
     left: 14px;
     width: 32px;
     height: 33px;
-    background: url("../../img/about-product/icon_alarm.svg") no-repeat;
+    background: url("../img/about-product/icon_alarm.svg") no-repeat;
   }
 }
 
 .about-product__item-content {
-  font-family: Arial;
   margin: 0;
+  font-family: $main-font;
 }
