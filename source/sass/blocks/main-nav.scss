@@ -1,0 +1,229 @@
+.main-nav {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  max-width: 1220px;
+  padding: 10px 20px 17px 20px;
+  border-bottom: 1px solid $special_border-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 92%;
+    padding: 26px 30px 10px 30px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85%;
+    padding: 53px 110px 17px 110px;
+  }
+}
+
+.main-nav__toggle {
+  cursor: pointer;
+  background: $basic-white;
+  border: none;
+  width: 24px;
+  height: 17.5px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 1.5px;
+  border: none;
+  background-color: $basic-black;
+  transition: 0.5s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    border: none;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    content: "";
+    bottom: 8px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    bottom: -8px;
+    left: 0;
+  }
+}
+
+.main-nav__menu {
+  display: none;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  z-index: 1;
+  background-color: $basic-white;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    display: block;
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
+    display: block;
+    position: static;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: 720px;
+      height: 694px;
+      background-image: url("../img/promo/index-background-desktop.jpg");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background: $basic-green;
+      opacity: 0.85;
+      width: 720px;
+      height: 694px;
+    }
+  }
+}
+
+.main-nav__logo-title,
+.main-nav__logo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__menu--show-menu {
+  display: block;
+}
+
+.main-nav__toggle-item--close-menu {
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+  cursor: pointer;
+  width: 24px;
+  height: 1.5px;
+  border: none;
+  background-color: $basic-black;
+  transition: 0.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic-black;
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+}
+
+.main-nav__list {
+  @include list-zeroing;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.main-nav__item-link {
+  color: $basic-black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $basic-white;
+  }
+}
+
+.main-nav__item {
+  padding-top: 26px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $special_border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.main-nav__item-link:not([href]) {
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-white;
+    width: 100%;
+  }
+}

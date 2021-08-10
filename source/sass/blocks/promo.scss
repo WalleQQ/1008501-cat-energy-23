@@ -1,45 +1,121 @@
-.promo {
+.promo__wrapper {
   position: relative;
-  text-align: center;
-  width: 320px;
+  max-width: 1220px;
   margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 92%;
+    padding: 0 30px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85%;
+    padding: 0 110px;
+    text-align: left;
+  }
 }
 
 .promo__background {
+  margin: 0 auto;
+  max-width: 1220px;
   margin-bottom: 138px;
   background: linear-gradient(
       rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)
     ),
-    url("../img/promo/promo-background-desktop.jpg") no-repeat;
+    url("../img/promo/promo-background.jpg") no-repeat 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    background: $basic-white;
+  }
 }
 
 .promo__product-image {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    top: 201px;
+    left: 0;
+    transform: translateX(0) translateY(0);
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 449px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-30%) translateY(-10%);
+  }
 }
 
 .promo__title {
   margin: 0;
-  padding-top: 27px;
   color: $basic-white;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 62px 207px 41px 87px;
+    white-space: nowrap;
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 114px 0 40px 80px;
+  }
 }
 
 .promo__slogan {
   color: $basic-white;
+  white-space: nowrap;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 164px;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 87px;
+    margin-bottom: 49px;
+
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .promo__button {
   margin-bottom: 22px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-left: 87px;
+    padding: 14px 26px;
+    margin-bottom: 526px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 267px;
+  }
 }

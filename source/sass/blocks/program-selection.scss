@@ -239,8 +239,7 @@
   }
 }
 
-.program-selection__checkbox-input:checked
-  + .program-selection__checkbox-text::after {
+.program-selection__checkbox-input:checked + .program-selection__checkbox-text::after {
   content: "";
   position: absolute;
   background: url("../img/program-selection/checkbox-active.svg") no-repeat 50%
