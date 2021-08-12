@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="inner-page-body">
-    <header class="page-header">
+    <header class="inner-page-header">
       <nav class="main-nav">
         <a
           class="main-nav__logo"
@@ -27,20 +27,38 @@
             alt="Cat Energy"
           />
         </a>
+        <a class="main-nav__logo-tablet">
+          <img
+            src="img/logo-tablet.svg"
+            width="174"
+            height="52"
+            alt="Логотип Cat Energy"
+          />
+        </a>
         <div class="main-nav__toggle" type="button">
           <span class="main-nav__toggle-item"></span>
           <span class="visually-hidden">Открыть меню</span>
         </div>
-        <div class="main-nav__menu">
+        <div class="main-nav__menu main-nav__menu--inner-page">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__item-link" href="index.html">Главная</a>
+            <li class="main-nav__item">
+              <a
+                class="main-nav__item-link main-nav__item-link--inner-page"
+                href="index.html"
+                >Главная</a
+              >
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+              <a
+                class="main-nav__item-link main-nav__item-link--inner-page"
+                href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link">Подбор программы</a>
+              <a class="main-nav__item-link main-nav__item-link--inner-page"
+                >Подбор программы</a
+              >
             </li>
           </ul>
         </div>
@@ -209,13 +227,15 @@
               >
                 Комментарий
               </legend>
-              <textarea
-                class="program-selection__comments-area"
-                name="comments"
-                cols="30"
-                rows="10"
-                placeholder="Расскажите обо всех повадках кота"
-              ></textarea>
+              <div class="program-selection__comments-area-wrapper">
+                <textarea
+                  class="program-selection__comments-area"
+                  name="comments"
+                  cols="30"
+                  rows="10"
+                  placeholder="Расскажите обо всех повадках кота"
+                ></textarea>
+              </div>
             </fieldset>
             <fieldset class="program-selection__additional-details">
               <legend

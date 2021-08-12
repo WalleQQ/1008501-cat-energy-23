@@ -18,6 +18,7 @@
   @include list-zeroing;
 
   @media (min-width: $desktop-width) {
+    margin-top: 82px;
     display: grid;
     grid-template-columns: 570px 570px;
     column-gap: 80px;
@@ -43,7 +44,7 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 22px;
+    transform: translateX(-1%);
     top: 24px;
     background-color: $basic-green;
     border-radius: 50%;
@@ -55,7 +56,7 @@
     width: 50px;
     height: 53px;
     background: url("../img/diets/cat-slim.svg") no-repeat;
-    left: 29px;
+    transform: translateX(-255%);
     top: 21px;
   }
 
@@ -65,13 +66,12 @@
     width: 67px;
     height: 28px;
     background: url("../img/diets/cat-pro.svg") no-repeat;
-    left: 13px;
+    transform: translateX(-210%);
     top: 35px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 52px;
-    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -86,8 +86,9 @@
       position: absolute;
       width: 200px;
       height: 200px;
-      left: 446px;
+      right: 62px;
       top: 92px;
+      transform: translateX(0);
       background-color: $basic-green;
       border-radius: 50%;
     }
@@ -98,7 +99,8 @@
       width: 140px;
       height: 194px;
       background: url("../img/diets/cat-slim-tablet.svg") no-repeat;
-      left: 476px;
+      transform: translateX(0);
+      right: 92px;
       top: 81px;
     }
 
@@ -108,7 +110,8 @@
       width: 268px;
       height: 112px;
       background: url("../img/diets/cat-pro-tablet.svg") no-repeat;
-      left: 412px;
+      transform: translateX(0);
+      right: 28px;
       top: 135px;
     }
   }
@@ -184,6 +187,7 @@
 }
 
 .diets__field-content {
+  margin: 0;
   font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
@@ -207,6 +211,7 @@
 .diets__field-button {
   display: inline-block;
   margin: 0;
+  margin-top: 19px;
   text-transform: uppercase;
   color: $basic-black;
   font-family: inherit;

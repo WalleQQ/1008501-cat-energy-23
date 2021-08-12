@@ -1,10 +1,10 @@
 .main-nav {
   position: relative;
+  z-index: 2;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: auto;
   max-width: 1220px;
   padding: 10px 20px 17px 20px;
   border-bottom: 1px solid $special_border-grey;
@@ -73,7 +73,7 @@
   left: 0;
   z-index: 1;
   background-color: $basic-white;
-  width: 100%;
+  width: auto;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -85,29 +85,7 @@
     width: 440px;
     display: block;
     position: static;
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      width: 720px;
-      height: 694px;
-      background-image: url("../img/promo/index-background-desktop.jpg");
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background: $basic-green;
-      opacity: 0.85;
-      width: 720px;
-      height: 694px;
-    }
+    background-color: rgba(104, 183, 56, 0);
   }
 }
 
@@ -200,6 +178,10 @@
     line-height: 30px;
     font-weight: 400;
     color: $basic-white;
+
+    &--inner-page {
+      color: $basic-black;
+    }
   }
 }
 
@@ -226,4 +208,9 @@
     border-bottom: 2px solid $basic-white;
     width: 100%;
   }
+}
+
+.main-nav__item-link--inner-page:not([href]) {
+  border-bottom: 2px solid $basic-green;
+  width: 100%;
 }

@@ -65,6 +65,7 @@
 }
 
 .socials__copyright-text {
+  white-space: nowrap;
   font-family: $main-font;
   margin: 0;
 
@@ -76,4 +77,9 @@
 
 .socials__copyright-link {
   color: $special-dark-grey;
+}
+
+.socials__copyright-logo {
+  width: 27px;
+  height: 34px;
 }

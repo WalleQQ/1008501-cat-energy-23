@@ -1,26 +1,18 @@
 .address__wrapper {
   position: relative;
-  max-width: 1220px;
+  max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
 
   &--background {
     background: $basic-grey;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 92%;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1440px;
-    width: 100%;
   }
 }
 
 .address__info {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 28px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 71px;
@@ -34,7 +26,6 @@
     top: 95px;
     width: 570px;
     height: 201px;
-    background-color: $basic-white;
   }
 }
 
@@ -45,7 +36,6 @@
   color: $special-black;
   text-transform: uppercase;
   width: 139px;
-  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
