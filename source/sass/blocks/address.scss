@@ -1,7 +1,8 @@
 .address__wrapper {
-  width: 320px;
-  padding-top: 28px;
+  position: relative;
+  max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
 
   &--background {
     background: $basic-grey;
@@ -11,26 +12,67 @@
 .address__info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  padding: 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    width: 570px;
+    height: 201px;
+  }
 }
 
 .address__text {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: $special-black;
   text-transform: uppercase;
   width: 139px;
-  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    padding-top: 66px;
+    margin-bottom: 51px;
+    width: 171px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 66px;
+  }
 }
 
 .address__address {
+  margin: 0;
   font-family: $main-font;
   font-style: normal;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 62px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 89px;
+  }
 }
 
 .address__map {
-  width: 320px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
   border: none;
 }
