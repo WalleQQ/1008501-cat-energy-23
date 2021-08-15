@@ -73,7 +73,7 @@
   left: 0;
   z-index: 1;
   background-color: $basic-white;
-  width: auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -211,6 +211,8 @@
 }
 
 .main-nav__item-link--inner-page:not([href]) {
-  border-bottom: 2px solid $basic-green;
-  width: 100%;
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-green;
+    width: 100%;
+  }
 }

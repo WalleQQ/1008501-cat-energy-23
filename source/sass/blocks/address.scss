@@ -26,6 +26,7 @@
     top: 95px;
     width: 570px;
     height: 201px;
+    background-color: $basic-white;
   }
 }
 
@@ -74,5 +75,6 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  max-width: 1440px;
   border: none;
 }

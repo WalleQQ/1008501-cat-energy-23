@@ -112,6 +112,7 @@
 }
 
 .example-item {
+  box-sizing: border-box;
   position: relative;
   border: 1px solid $special-border-bar;
   border-radius: 3px;
@@ -218,6 +219,7 @@
   max-width: 708px;
   width: 100%;
   position: relative;
+  z-index: 1;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -256,7 +258,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 50%;
+    max-width: unset;
     overflow: hidden;
   }
 
@@ -300,6 +302,7 @@
 
 .example__before-after {
   position: absolute;
+  z-index: 20;
   bottom: 0;
   display: flex;
   justify-content: space-between;

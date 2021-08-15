@@ -77,95 +77,101 @@
             method="get"
             target="_blank"
           >
-            <div class="program-selection__cat-details program-selection-data">
-              <ul class="program-selection-data__list">
-                <li class="program-selection-data__item">
-                  <label
-                    class="
-                      program-selection-data__text
-                      program-selection-data__text--name
-                    "
-                    for="name"
-                    >Имя:*</label
-                  >
-                  <input
-                    class="program-selection-data__input"
-                    type="text"
-                    placeholder="Барсик"
-                    id="name"
-                    required
-                  />
-                </li>
-                <li class="program-selection-data__item">
-                  <label
-                    class="
-                      program-selection-data__text
-                      program-selection-data__text--weight
-                    "
-                    for="weight"
-                    >Вес (кг):*</label
-                  >
-                  <input
-                    class="program-selection-data__input"
-                    type="number"
-                    placeholder="7"
-                    id="weight"
-                  />
-                </li>
-                <li class="program-selection-data__item">
-                  <label
-                    class="
-                      program-selection-data__text
-                      program-selection-data__text--age
-                    "
-                    for="age"
-                    >Возраст (лет):</label
-                  >
-                  <input
-                    class="program-selection-data__input"
-                    type="number"
-                    placeholder="7"
-                    id="age"
-                  />
-                </li>
-              </ul>
-            </div>
-            <div class="program-selection__choice-program">
-              <ul class="program-selection__radio-list">
-                <li class="program-selection__radio-item">
-                  <input
-                    class="program-selection__radio visually-hidden"
-                    type="radio"
-                    id="slimming"
-                    name="toogle"
-                  />
-                  <label class="program-selection__radio-text" for="slimming"
-                    >Похудение</label
-                  >
-                </li>
-                <li class="program-selection__radio-item">
-                  <input
-                    class="program-selection__radio visually-hidden"
-                    type="radio"
-                    id="weight-gain"
-                    name="toogle"
-                  />
-                  <label class="program-selection__radio-text" for="weight-gain"
-                    >Набор массы</label
-                  >
-                </li>
-                <li class="program-selection__radio-item">
-                  <input
-                    class="program-selection__radio visually-hidden"
-                    type="radio"
-                    id="advice"
-                    name="toogle"
-                  />
-                  <label class="program-selection__radio-text" for="advice"
-                    >Не знаю (Нужен ваш совет)</label
-                  >
-                </li>
-              </ul>
+            <div class="program-selection__cat-info">
+              <div
+                class="program-selection__cat-details program-selection-data"
+              >
+                <ul class="program-selection-data__list">
+                  <li class="program-selection-data__item">
+                    <label
+                      class="
+                        program-selection-data__text
+                        program-selection-data__text--name
+                      "
+                      for="name"
+                      >Имя:*</label
+                    >
+                    <input
+                      class="program-selection-data__input"
+                      type="text"
+                      placeholder="Барсик"
+                      id="name"
+                      required
+                    />
+                  </li>
+                  <li class="program-selection-data__item">
+                    <label
+                      class="
+                        program-selection-data__text
+                        program-selection-data__text--weight
+                      "
+                      for="weight"
+                      >Вес (кг):*</label
+                    >
+                    <input
+                      class="program-selection-data__input"
+                      type="number"
+                      placeholder="7"
+                      id="weight"
+                    />
+                  </li>
+                  <li class="program-selection-data__item">
+                    <label
+                      class="
+                        program-selection-data__text
+                        program-selection-data__text--age
+                      "
+                      for="age"
+                      >Возраст (лет):</label
+                    >
+                    <input
+                      class="program-selection-data__input"
+                      type="number"
+                      placeholder="7"
+                      id="age"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="program-selection__choice-program">
+                <ul class="program-selection__radio-list">
+                  <li class="program-selection__radio-item">
+                    <input
+                      class="program-selection__radio visually-hidden"
+                      type="radio"
+                      id="slimming"
+                      name="toogle"
+                    />
+                    <label class="program-selection__radio-text" for="slimming"
+                      >Похудение</label
+                    >
+                  </li>
+                  <li class="program-selection__radio-item">
+                    <input
+                      class="program-selection__radio visually-hidden"
+                      type="radio"
+                      id="weight-gain"
+                      name="toogle"
+                    />
+                    <label
+                      class="program-selection__radio-text"
+                      for="weight-gain"
+                      >Набор массы</label
+                    >
+                  </li>
+                  <li class="program-selection__radio-item">
+                    <input
+                      class="program-selection__radio visually-hidden"
+                      type="radio"
+                      id="advice"
+                      name="toogle"
+                    />
+                    <label class="program-selection__radio-text" for="advice"
+                      >Не знаю (Нужен ваш совет)</label
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
             <fieldset class="program-selection__contact-details">
               <legend class="program-selection__contact-title inner-page-title">
@@ -177,7 +183,12 @@
                   program-selection-data
                 "
               >
-                <ul class="program-selection-data__list">
+                <ul
+                  class="
+                    program-selection-data__list
+                    program-selection-data__list--contact-details
+                  "
+                >
                   <li class="program-selection-data__item">
                     <label
                       class="
@@ -309,7 +320,7 @@
     </main>
     <footer class="page-footer">
       <section class="address">
-        <div class="address__wrapper address__wrapper--background">
+        <div class="address__wrapper">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <div class="address__info">
             <p class="address__text">
@@ -324,7 +335,6 @@
             <iframe
               class="address__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627404846940!5m2!1sru!2sru"
-              width="600"
               height="450"
               allowfullscreen=""
               loading="lazy"
@@ -446,6 +456,7 @@
           <div class="socials__copyright">
             <p class="socials__copyright-text">
               <a
+                class="socials__copyright-link"
                 href="https://htmlacademy.ru/intensive/adaptive"
                 target="_blank"
                 >HTML Academy</a
@@ -453,6 +464,7 @@
             </p>
             <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
               ><img
+                class="socials__copyright-logo"
                 src="img/htmlacademy.svg"
                 width="27"
                 height="34"
