@@ -1,12 +1,15 @@
-.address__wrapper {
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
+.address {
+  background-color: $basic-white;
 
   &--background {
     background: $basic-grey;
   }
+}
+
+.address__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .address__info {
@@ -75,6 +78,5 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 1440px;
   border: none;
 }

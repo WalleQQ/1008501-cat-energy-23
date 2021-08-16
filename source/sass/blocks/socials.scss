@@ -1,6 +1,10 @@
+.socials {
+  background: $basic-grey;
+  margin-top: -3px;
+}
+
 .socials__wrapper {
   margin: 0 auto;
-  background: $basic-grey;
   max-width: 1220px;
   padding: 39px 20px 22px 20px;
 
@@ -23,6 +27,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -52,6 +64,28 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.socials__item-link:hover path,
+.socials__copyright-logo:hover path {
+  fill: $basic-green;
+}
+
+.socials__item-link:active path,
+.socials__copyright-logo:active path {
+  fill: $basic-green;
+  opacity: 0.3;
+}
+
+.socials__item-link--facebook:hover path {
+  fill: none;
+  stroke: $basic-green;
+}
+
+.socials__item-link--facebook:active path {
+  fill: none;
+  stroke: $basic-green;
+  opacity: 0.3;
 }
 
 .socials__copyright {
