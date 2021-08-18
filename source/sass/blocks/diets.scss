@@ -224,5 +224,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      background: url("../img/diets/icon_arrow-hover.svg") no-repeat right;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

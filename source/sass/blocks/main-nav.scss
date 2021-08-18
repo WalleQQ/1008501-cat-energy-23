@@ -9,6 +9,12 @@
   padding: 10px 20px 17px 20px;
   border-bottom: 1px solid $special_border-grey;
 
+  &--nojs {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 92%;
     padding: 26px 30px 10px 30px;
@@ -69,11 +75,11 @@
 .main-nav__menu {
   display: none;
   position: absolute;
-  top: 68px;
+  top: 67px;
   left: 0;
   z-index: 1;
   background-color: $basic-white;
-  width: auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -98,6 +104,14 @@
 
 .main-nav__logo-tablet {
   display: none;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -138,6 +152,15 @@
   }
 }
 
+.main-nav--nojs .main-nav__menu {
+  display: block;
+  position: static;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav__list {
   @include list-zeroing;
   text-align: center;
@@ -171,6 +194,14 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -183,6 +214,10 @@
       color: $basic-black;
     }
   }
+}
+
+.main-nav--nojs .main-nav__item:first-child {
+  border-top: 1px solid $special_border-grey;
 }
 
 .main-nav__item {
@@ -211,6 +246,8 @@
 }
 
 .main-nav__item-link--inner-page:not([href]) {
-  border-bottom: 2px solid $basic-green;
-  width: 100%;
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-green;
+    width: 100%;
+  }
 }

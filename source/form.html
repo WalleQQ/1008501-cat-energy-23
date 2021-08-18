@@ -8,7 +8,7 @@
   </head>
   <body class="inner-page-body">
     <header class="inner-page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <a
           class="main-nav__logo"
           aria-label="Логотип Cat Energy"
@@ -27,7 +27,7 @@
             alt="Cat Energy"
           />
         </a>
-        <a class="main-nav__logo-tablet">
+        <a class="main-nav__logo-tablet" href="index.html">
           <img
             src="img/logo-tablet.svg"
             width="174"
@@ -77,95 +77,102 @@
             method="get"
             target="_blank"
           >
-            <div class="program-selection__cat-details program-selection-data">
-              <ul class="program-selection-data__list">
-                <li class="program-selection-data__item">
-                  <label
-                    class="
-                      program-selection-data__text
-                      program-selection-data__text--name
-                    "
-                    for="name"
-                    >Имя:*</label
-                  >
-                  <input
-                    class="program-selection-data__input"
-                    type="text"
-                    placeholder="Барсик"
-                    id="name"
-                    required
-                  />
-                </li>
-                <li class="program-selection-data__item">
-                  <label
-                    class="
-                      program-selection-data__text
-                      program-selection-data__text--weight
-                    "
-                    for="weight"
-                    >Вес (кг):*</label
-                  >
-                  <input
-                    class="program-selection-data__input"
-                    type="number"
-                    placeholder="7"
-                    id="weight"
-                  />
-                </li>
-                <li class="program-selection-data__item">
-                  <label
-                    class="
-                      program-selection-data__text
-                      program-selection-data__text--age
-                    "
-                    for="age"
-                    >Возраст (лет):</label
-                  >
-                  <input
-                    class="program-selection-data__input"
-                    type="number"
-                    placeholder="7"
-                    id="age"
-                  />
-                </li>
-              </ul>
-            </div>
-            <div class="program-selection__choice-program">
-              <ul class="program-selection__radio-list">
-                <li class="program-selection__radio-item">
-                  <input
-                    class="program-selection__radio visually-hidden"
-                    type="radio"
-                    id="slimming"
-                    name="toogle"
-                  />
-                  <label class="program-selection__radio-text" for="slimming"
-                    >Похудение</label
-                  >
-                </li>
-                <li class="program-selection__radio-item">
-                  <input
-                    class="program-selection__radio visually-hidden"
-                    type="radio"
-                    id="weight-gain"
-                    name="toogle"
-                  />
-                  <label class="program-selection__radio-text" for="weight-gain"
-                    >Набор массы</label
-                  >
-                </li>
-                <li class="program-selection__radio-item">
-                  <input
-                    class="program-selection__radio visually-hidden"
-                    type="radio"
-                    id="advice"
-                    name="toogle"
-                  />
-                  <label class="program-selection__radio-text" for="advice"
-                    >Не знаю (Нужен ваш совет)</label
-                  >
-                </li>
-              </ul>
+            <div class="program-selection__cat-info">
+              <div
+                class="program-selection__cat-details program-selection-data"
+              >
+                <ul class="program-selection-data__list">
+                  <li class="program-selection-data__item">
+                    <label
+                      class="
+                        program-selection-data__text
+                        program-selection-data__text--name
+                      "
+                      for="name"
+                      >Имя:*</label
+                    >
+                    <input
+                      class="program-selection-data__input"
+                      type="text"
+                      placeholder="Барсик"
+                      id="name"
+                      required
+                    />
+                  </li>
+                  <li class="program-selection-data__item">
+                    <label
+                      class="
+                        program-selection-data__text
+                        program-selection-data__text--weight
+                      "
+                      for="weight"
+                      >Вес (кг):*</label
+                    >
+                    <input
+                      class="program-selection-data__input"
+                      type="number"
+                      placeholder="7"
+                      id="weight"
+                      required
+                    />
+                  </li>
+                  <li class="program-selection-data__item">
+                    <label
+                      class="
+                        program-selection-data__text
+                        program-selection-data__text--age
+                      "
+                      for="age"
+                      >Возраст (лет):</label
+                    >
+                    <input
+                      class="program-selection-data__input"
+                      type="number"
+                      placeholder="7"
+                      id="age"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="program-selection__choice-program">
+                <ul class="program-selection__radio-list">
+                  <li class="program-selection__radio-item">
+                    <input
+                      class="program-selection__radio visually-hidden"
+                      type="radio"
+                      id="slimming"
+                      name="toogle"
+                    />
+                    <label class="program-selection__radio-text" for="slimming"
+                      >Похудение</label
+                    >
+                  </li>
+                  <li class="program-selection__radio-item">
+                    <input
+                      class="program-selection__radio visually-hidden"
+                      type="radio"
+                      id="weight-gain"
+                      name="toogle"
+                    />
+                    <label
+                      class="program-selection__radio-text"
+                      for="weight-gain"
+                      >Набор массы</label
+                    >
+                  </li>
+                  <li class="program-selection__radio-item">
+                    <input
+                      class="program-selection__radio visually-hidden"
+                      type="radio"
+                      id="advice"
+                      name="toogle"
+                    />
+                    <label class="program-selection__radio-text" for="advice"
+                      >Не знаю (Нужен ваш совет)</label
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
             <fieldset class="program-selection__contact-details">
               <legend class="program-selection__contact-title inner-page-title">
@@ -177,7 +184,12 @@
                   program-selection-data
                 "
               >
-                <ul class="program-selection-data__list">
+                <ul
+                  class="
+                    program-selection-data__list
+                    program-selection-data__list--contact-details
+                  "
+                >
                   <li class="program-selection-data__item">
                     <label
                       class="
@@ -308,8 +320,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="address">
-        <div class="address__wrapper address__wrapper--background">
+      <section class="address address--background">
+        <div class="address__wrapper">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <div class="address__info">
             <p class="address__text">
@@ -324,7 +336,6 @@
             <iframe
               class="address__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627404846940!5m2!1sru!2sru"
-              width="600"
               height="450"
               allowfullscreen=""
               loading="lazy"
@@ -423,7 +434,10 @@
                 </a>
               </li>
               <li class="socials__item">
-                <a class="socials__item-link" href="#" aria-label="Facebook"
+                <a
+                  class="socials__item-link socials__item-link--facebook"
+                  href="#"
+                  aria-label="Facebook"
                   ><svg
                     width="22"
                     height="22"
@@ -446,18 +460,25 @@
           <div class="socials__copyright">
             <p class="socials__copyright-text">
               <a
+                class="socials__copyright-link"
                 href="https://htmlacademy.ru/intensive/adaptive"
                 target="_blank"
                 >HTML Academy</a
               >
             </p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
-              ><img
-                src="img/htmlacademy.svg"
-                width="27"
-                height="34"
-                alt="Логотип htmlacademy"
-            /></a>
+            <a
+              class="socials__copyright-logo"
+              href="https://htmlacademy.ru/intensive/adaptive"
+              target="_blank"
+              aria-label="Логотип htmlacademy"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                <path
+                  fill="#666666"
+                  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
