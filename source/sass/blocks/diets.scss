@@ -28,7 +28,7 @@
 
 .diets__field-item {
   position: relative;
-  padding: 30px 33px 22px 20px;
+  padding: 30px 33px 20px 20px;
   background: $basic-grey;
 
   &:not(:last-child) {
@@ -36,7 +36,7 @@
   }
 
   &:last-child {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 
   &::before {
@@ -44,8 +44,8 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    transform: translateX(-1%);
-    top: 24px;
+    transform: translateX(4%);
+    top: 23px;
     background-color: $basic-green;
     border-radius: 50%;
   }
@@ -167,14 +167,14 @@
   line-height: 37px;
   font-weight: 400;
   color: $basic-black;
-  padding-left: 68px;
+  padding-left: 71px;
   margin: 0;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding: 0;
   }
 
@@ -201,6 +201,7 @@
     color: $basic-black;
     padding: 0;
     margin-bottom: 52px;
+    min-width: 340px;
   }
 
   @media (min-width: $desktop-width) {
@@ -224,6 +225,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 0;
+    padding-right: 56px;
 
     &:hover {
       background: url("../img/diets/icon_arrow-hover.svg") no-repeat right;

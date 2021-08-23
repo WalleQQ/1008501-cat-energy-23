@@ -1,8 +1,9 @@
 .example {
   background-color: $special-grey;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $basic-white 55%, $special-grey 45%);
+    background: linear-gradient(to bottom, $basic-white 57%, $special-grey 43%);
   }
 
   @media (min-width: $desktop-width) {
@@ -18,11 +19,14 @@
 .example__wrapper {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 27px 20px 31px 20px;
+  padding: 27px 20px 37px 20px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0;
     position: relative;
-    padding: 43px 30px 0 30px;
+    padding: 40px 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +44,7 @@
   line-height: 40px;
   font-weight: 400;
   color: $basic-black;
+  margin: 0;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -64,15 +69,13 @@
   z-index: 2;
   font-family: $main-font;
   margin: 0;
-  margin-bottom: 25px;
-  width: 280px;
+  margin-bottom: 23px;
   max-width: 700px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
-    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,20 +89,15 @@
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 200px;
-  }
-
-  @media (min-width: $tablet-width) {
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr min-content;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     width: 366px;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
     grid-column: 1 / 2;
     grid-row-start: 2;
     grid-row-end: -1;
@@ -108,32 +106,30 @@
 
 .example__list {
   @include list-zeroing;
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-template-columns: 162px 162px;
+    column-gap: 42px;
+  }
 }
 
 .example-item {
   box-sizing: border-box;
   position: relative;
-  border: 1px solid $special-border-bar;
-  border-radius: 3px;
-  padding: 15px 21px 17px 21px;
+  padding: 0;
   min-width: 124px;
   margin-bottom: 34px;
 
-  &:not(:last-child) {
-    margin-right: 32px;
-  }
-
   @media (min-width: $tablet-width) {
-    padding: 15px 30px 20px 30px;
     max-width: 162px;
     width: 162px;
     margin-bottom: 0;
-
-    &:not(:last-child) {
-      margin-right: 42px;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -142,14 +138,19 @@
 }
 
 .example__item-resume {
+  border: 1px solid $special-border-bar;
+  border-radius: 3px;
+  padding: 15px 21px 17px 21px;
   white-space: nowrap;
   margin: 0;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    padding: 15px 30px 20px 30px;
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 0;
@@ -159,22 +160,15 @@
 .example__item-text {
   font-family: $main-font;
   text-align: center;
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateY(50%) translateX(-50%);
-  padding: 1px 8px;
+  margin: -20px auto 0 auto;
+  max-width: 82px;
   background: $special-grey;
   font-size: 12px;
   line-height: 12px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateY(50%) translateX(-50%);
-    padding: 1px 8px;
+    margin: -10px auto 0 auto;
+    max-width: 142px;
     background: $basic-white;
     font-size: 14px;
     line-height: 14px;
@@ -186,8 +180,7 @@
 }
 
 .example__cost {
-  margin: 0;
-  margin-bottom: 42px;
+  margin: -15px 0 42px 0;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -199,6 +192,7 @@
     font-size: 20px;
     line-height: 30px;
     text-align: right;
+    margin-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -215,13 +209,21 @@
 .example__before-after-slider {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 311px;
   height: 100%;
   position: relative;
+  top: 0px;
+  left: -20px;
   z-index: 1;
   overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 100%;
     margin-bottom: 15px;
     grid-column: 2 / -1;
     grid-row: 1 / 3;
@@ -230,37 +232,50 @@
 
 .example__image-before {
   background-color: $special-grey;
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
+  left: 35px;
+  top: 17px;
   height: 100%;
-  width: 50%;
+  width: 100%;
   overflow: hidden;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 47.7%;
     background-color: inherit;
   }
 
   @media (min-width: $desktop-width) {
-    width: 54%;
+    width: 51.5%;
   }
 }
 
 .example__image-after {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     position: relative;
     z-index: 1;
-    right: -25px;
+    right: -37px;
+    transform: translateX(-5%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    right: -71px;
   }
 }
 
 .example__image--cat-fat {
-  max-width: unset;
+  @media (min-width: $tablet-width) {
+    max-width: unset;
+  }
 }
 
 .example__before-after {
-  margin-top: 23px;
+  margin-top: 28px;
   position: relative;
   z-index: 20;
   display: flex;
@@ -268,6 +283,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    margin: 28px auto 0 auto;
     padding: 0 69px 70px 67px;
     width: 572px;
   }
@@ -280,14 +296,17 @@
 
 .example__before-button,
 .example__after-button {
+  margin: 0;
   padding: 0;
+  font-size: 16px;
+  line-height: 20px;
   border: none;
   background: none;
   color: $basic-black;
 
   &.example__before-button {
-    margin-left: 58px;
-    margin-right: 12px;
+    margin-left: 44px;
+    margin-right: 18px;
   }
 
   &.example__after-button {
@@ -319,7 +338,8 @@
 
 .example__scale {
   position: relative;
-  width: 84px;
+  min-width: 84px;
+  width: 100%;
   height: 14px;
   background: $basic-white;
   border: 1px solid $special-border-bar;
@@ -336,9 +356,9 @@
 }
 
 .example__bar {
-  margin: 0 6px;
+  margin: 0 5px;
   transform: translateY(50%);
-  width: 35px;
+  width: 42%;
   height: 6px;
   background: $basic-green;
   border-radius: 6px;
