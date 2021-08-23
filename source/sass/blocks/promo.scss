@@ -1,11 +1,17 @@
 .promo {
   background: linear-gradient(
       to bottom,
-      rgba(104, 183, 56, 0.85) 58%,
-      $basic-white 42%
+      rgba(104, 183, 56, 0.85) 60%,
+      $basic-white 40%
     ),
     url("../img/promo/promo-background.jpg") no-repeat center top;
   background-size: 100%, contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/promo/promo-background@2x.jpg") no-repeat
+      center top;
+    background-size: 100%, contain;
+  }
 
   @media (min-width: $tablet-width) {
     background: $basic-white;
@@ -18,8 +24,19 @@
         $basic-white 50%,
         rgba(104, 183, 56, 0.85) 50%
       ),
-      url("../img/promo/index-background-desktop.jpg") no-repeat 100% top;
+      url("../img/promo/promo-background-desktop.jpg") no-repeat 100% top;
     background-size: 100%, 50%;
+
+    @media (min-resolution: 2dppx) {
+      width: 100%;
+      background: linear-gradient(
+          to right,
+          $basic-white 50%,
+          rgba(104, 183, 56, 0.85) 50%
+        ),
+        url("../img/promo/promo-background-desktop@2x.jpg") no-repeat 100% top;
+      background-size: 100%, 50%;
+    }
   }
 }
 
@@ -49,22 +66,16 @@
   position: absolute;
   top: 167px;
   left: 50%;
-  width: 280px;
-  height: 270px;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    width: 709px;
-    height: 609px;
-    top: 201px;
-    left: 0;
-    transform: translateX(0) translateY(0);
+    top: 199px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 552px;
-    height: 449px;
     top: 181px;
     left: 50%;
     transform: translateX(-30%) translateY(-10%);
@@ -81,7 +92,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 62px 207px 41px 87px;
+    margin: 51px 207px 41px 87px;
     white-space: nowrap;
     font-size: 60px;
     line-height: 60px;
@@ -101,14 +112,14 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 302px;
+  margin-bottom: 300px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
     font-size: 20px;
     line-height: 20px;
     margin-left: 87px;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
 
     padding: 0;
   }
@@ -128,7 +139,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 87px;
-    padding: 14px 26px;
+    padding: 17px 26px;
     margin-bottom: 526px;
     z-index: 2;
 

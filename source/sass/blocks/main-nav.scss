@@ -88,23 +88,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 440px;
+    width: 483px;
     display: block;
     position: static;
     background-color: rgba(104, 183, 56, 0);
   }
 }
 
-.main-nav__logo-title,
 .main-nav__logo {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-nav__logo-tablet {
-  display: none;
-
   &[href]:hover {
     opacity: 0.8;
   }
@@ -112,9 +103,11 @@
   &[href]:active {
     opacity: 0.6;
   }
+}
 
+.main-nav__logo-title {
   @media (min-width: $tablet-width) {
-    display: block;
+    display: none;
   }
 }
 

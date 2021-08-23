@@ -40,10 +40,16 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 230px 230px;
     column-gap: 154px;
     row-gap: 37px;
+  }
+
+  @media (min-width: 769px) and (max-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,24 +60,25 @@
 }
 
 .about-product__item {
-  max-width: 250px;
   padding: 3px 0;
   padding-left: 80px;
+  max-width: 460px;
 
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   &:last-child {
-    margin-bottom: 46px;
+    margin-bottom: 42px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     width: 60px;
     height: 60px;
@@ -81,7 +88,8 @@
   &--leaf::after {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 15px;
     width: 30px;
     height: 32px;
@@ -91,7 +99,8 @@
   &--tub::after {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 15px;
     width: 29px;
     height: 31px;
@@ -101,7 +110,8 @@
   &--eat::after {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 18px;
     width: 25px;
     height: 30px;
@@ -111,7 +121,8 @@
   &--alarm::after {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 14px;
     width: 32px;
     height: 33px;
@@ -135,6 +146,7 @@
       position: absolute;
       top: 40px;
       left: 0;
+      transform: translateY(0);
       width: 80px;
       height: 80px;
       background-color: $basic-green;
@@ -144,6 +156,7 @@
       content: "";
       position: absolute;
       top: 67px;
+      transform: translateY(0);
       left: 27px;
       width: 30px;
       height: 32px;
@@ -154,6 +167,7 @@
       content: "";
       position: absolute;
       top: 64px;
+      transform: translateY(0);
       left: 26px;
       width: 29px;
       height: 31px;
@@ -164,6 +178,7 @@
       content: "";
       position: absolute;
       top: 65px;
+      transform: translateY(0);
       left: 28px;
       width: 25px;
       height: 30px;
@@ -174,6 +189,7 @@
       content: "";
       position: absolute;
       top: 65px;
+      transform: translateY(0);
       left: 24px;
       width: 32px;
       height: 33px;

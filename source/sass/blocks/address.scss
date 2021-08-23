@@ -15,7 +15,7 @@
 .address__info {
   display: flex;
   justify-content: space-between;
-  padding: 28px 20px;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 71px;
@@ -43,21 +43,25 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
-    padding-top: 66px;
-    margin-bottom: 51px;
+    line-height: 25px;
+    padding-top: 68px;
+    margin-bottom: 57px;
     width: 171px;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
     margin: 0;
-    padding-left: 66px;
+    padding-left: 75px;
   }
 }
 
 .address__address {
   margin: 0;
   font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
   font-style: normal;
   width: 140px;
 
@@ -65,12 +69,19 @@
     width: 159px;
     font-size: 16px;
     line-height: 20px;
-    padding-top: 62px;
+    padding-top: 64px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 89px;
+    text-align: left;
+    padding-right: 86px;
+  }
+}
+
+.address__city {
+  @media (min-width: $tablet-width) {
+    line-height: 66px;
   }
 }
 
@@ -79,4 +90,9 @@
   z-index: 1;
   width: 100%;
   border: none;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

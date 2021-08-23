@@ -9,8 +9,7 @@
   padding: 39px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
-    width: 92%;
-    padding: 54px 30px 62px 30px;
+    padding: 52px 30px 62px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,15 +17,17 @@
 
   @media (min-width: $desktop-width) {
     width: 85%;
-    padding: 59px 110px 56px 110px;
+    padding: 61px 110px 56px 110px;
   }
 }
 
 .socials__logo-link {
-  margin: 0 76px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-right: 24px;
 
     &:hover {
       opacity: 0.8;
@@ -52,7 +53,7 @@
 
 .socials__list {
   position: relative;
-  padding: 25px 0;
+  padding: 18px 0;
   margin: 0 76px;
   list-style: none;
   display: flex;
@@ -64,28 +65,6 @@
     margin: 0;
     padding: 0;
   }
-}
-
-.socials__item-link:hover path,
-.socials__copyright-logo:hover path {
-  fill: $basic-green;
-}
-
-.socials__item-link:active path,
-.socials__copyright-logo:active path {
-  fill: $basic-green;
-  opacity: 0.3;
-}
-
-.socials__item-link--facebook:hover path {
-  fill: none;
-  stroke: $basic-green;
-}
-
-.socials__item-link--facebook:active path {
-  fill: none;
-  stroke: $basic-green;
-  opacity: 0.3;
 }
 
 .socials__copyright {
@@ -102,18 +81,66 @@
   white-space: nowrap;
   font-family: $main-font;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 18px;
-  }
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .socials__copyright-link {
   color: $special-dark-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.socials__copyright-logo {
-  width: 27px;
-  height: 34px;
+.socials__copyright-icon {
+  fill: $special-grey-2;
+}
+
+.socials__item-icon {
+  fill: $special-grey-2;
+  &--vkontakte {
+    width: 23px;
+    height: 16px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--facebook {
+    stroke: $special-grey-2;
+    width: 22px;
+    height: 22px;
+
+    &:hover {
+      stroke: $basic-green;
+    }
+  }
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 28px;
+      height: 33px;
+    }
+  }
 }
