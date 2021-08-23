@@ -253,6 +253,7 @@
 
 .example__image-after {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
