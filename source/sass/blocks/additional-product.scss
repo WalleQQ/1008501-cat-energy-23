@@ -16,56 +16,55 @@
 }
 
 .additional-product__heading {
-  margin: 21px 0 33px 0;
-  position: relative;
+  max-width: 1440px;
+  margin: 21px auto 36px auto;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
 
   &::after {
     content: "";
-    position: absolute;
     width: 53px;
     height: 2px;
-    right: -20px;
-    top: 50%;
-    transform: translateY(50%);
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 22px;
     background-color: $basic-green;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 37px;
-    margin: 68px 0 80px 0;
+    padding-left: 0;
+    margin: 68px auto 80px auto;
+    white-space: nowrap;
 
     &::before {
       content: "";
-      position: absolute;
       width: 30px;
       height: 2px;
-      left: -30px;
-      top: 50%;
-      transform: translateY(-50%);
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-right: 37px;
       background-color: $basic-green;
     }
 
     &::after {
       width: 328px;
-      right: 7px;
+      margin-left: 36px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
-    margin: 77px 0 81px 0;
+    margin: 77px auto 80px auto;
     padding: 0;
 
     &::before {
-      top: 66%;
       width: 70px;
-      left: -110px;
+      margin-right: 40px;
     }
 
     &::after {
-      top: 66%;
       width: 957px;
-      right: -110px;
+      margin-left: 35px;
     }
   }
 }
@@ -81,12 +80,12 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    margin-bottom: 86px;
+    margin-bottom: 80px;
   }
 }
 
 .additional-product__item {
-  padding: 13px 0 19px 0;
+  padding: 13px 0 18px 0;
   display: grid;
   grid-template-columns: 1fr auto;
   border-bottom: 1px solid $special-border-bar;
@@ -96,7 +95,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 39px 26px 38px;
+    padding: 26px 39px 27px 38px;
     grid-template-columns: 1fr auto auto;
     align-items: start;
     column-gap: 48px;
@@ -111,8 +110,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 0 17px 0;
-    grid-template-columns: 1fr 1fr auto auto;
+    padding: 14px 0 16px 0;
+    grid-template-columns: 277px 1fr auto auto;
     align-items: center;
 
     &:first-child {
@@ -157,10 +156,6 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    justify-self: center;
   }
 }
 
@@ -275,7 +270,8 @@
 
     &::before {
       transform: translateX(0);
-      left: 77px;
+      top: 55px;
+      left: 84px;
     }
   }
 }

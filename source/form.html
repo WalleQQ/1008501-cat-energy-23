@@ -25,7 +25,7 @@
             alt="Cat Energy"
           />
         </a>
-        <div class="main-nav__toggle" type="button">
+        <div class="main-nav__toggle">
           <span class="main-nav__toggle-item"></span>
           <span class="visually-hidden">Открыть меню</span>
         </div>
@@ -59,7 +59,8 @@
         <div class="program-selection__wraper">
           <h1 class="program-selection__heading">Подбор программы</h1>
           <p class="program-selection__content">
-            Заполните анкету, и мы подберем программу питания для вашего кота
+            Заполните анкету, и мы подберем<br />
+            программу питания для вашего кота
           </p>
           <form
             class="program-selection__filter"
@@ -100,7 +101,7 @@
                     >
                     <input
                       class="program-selection-data__input"
-                      type="number"
+                      type="text"
                       placeholder="7"
                       id="weight"
                       required
@@ -117,7 +118,7 @@
                     >
                     <input
                       class="program-selection-data__input"
-                      type="number"
+                      type="text"
                       placeholder="7"
                       id="age"
                     />
@@ -132,6 +133,7 @@
                       type="radio"
                       id="slimming"
                       name="toogle"
+                      checked
                     />
                     <label class="program-selection__radio-text" for="slimming"
                       >Похудение</label
@@ -255,6 +257,7 @@
                     type="checkbox"
                     id="sweetener"
                     name="sweetener"
+                    checked
                   />
                   <label
                     class="program-selection__checkbox-text"
@@ -362,9 +365,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__item-link" href="#" aria-label="Facebook"
-                  ><svg
-                    class="socials__item-icon socials__item-icon--facebook"
-                  >
+                  ><svg class="socials__item-icon socials__item-icon--facebook">
                     <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>

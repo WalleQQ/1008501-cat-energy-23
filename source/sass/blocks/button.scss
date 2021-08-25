@@ -11,4 +11,12 @@
   cursor: pointer;
   text-transform: uppercase;
   padding: 10px 72px;
+
+  &:hover {
+    background-color: $special-hover-green;
+  }
+
+  &:active {
+    color: $special-hover-white;
+  }
 }

@@ -31,17 +31,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 32px;
   }
 }
 
 .about-product__list {
   @include list-zeroing;
+  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     width: auto;
-    // display: flex;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: 230px 230px;
     column-gap: 154px;
@@ -196,6 +195,11 @@
       background: url("../img/about-product/icon_alarm.svg") no-repeat;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    padding: 151px 0 57px 0;
+  }
 }
 
 .about-product__item-content {
@@ -207,44 +211,9 @@
     line-height: 24px;
     z-index: 1;
 
-    &--first::before {
-      content: "1";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      font-family: $font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
-    }
-
-    &--second::before {
-      content: "2";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      font-family: $font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
-    }
-
-    &--third::before {
-      content: "3";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      font-family: $font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
-    }
-
-    &--fourth::before {
-      content: "4";
+    &::before {
+      counter-increment: section;
+      content: counters(section, ".") " ";
       position: absolute;
       z-index: -1;
       top: 0;
