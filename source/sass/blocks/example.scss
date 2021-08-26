@@ -33,7 +33,7 @@
     padding: 0 110px 0 110px;
     display: grid;
     grid-template-columns: 436px 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     column-gap: 134px;
     align-items: start;
   }
@@ -49,7 +49,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 63px;
+    margin-bottom: 66px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -129,10 +129,10 @@
   @media (min-width: $tablet-width) {
     max-width: 162px;
     width: 162px;
-    margin-bottom: 0;
+    margin-bottom: 66px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 60px;
   }
 }
@@ -150,7 +150,7 @@
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 30px 20px 30px;
+    padding: 15px 30px 17px 30px;
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 0;
@@ -225,7 +225,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-bottom: 15px;
-    grid-column: 2 / -1;
+    grid-column: 2 / 3;
     grid-row: 1 / 3;
   }
 }
@@ -233,8 +233,8 @@
 .example__image-before {
   background-color: $special-grey;
   position: relative;
-  left: 35px;
-  top: 17px;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -244,6 +244,8 @@
     position: absolute;
     width: 47.7%;
     background-color: inherit;
+    top: 13px;
+    left: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -258,8 +260,10 @@
     display: block;
     position: relative;
     z-index: 1;
-    right: -37px;
+    top: 13px;
+    right: -72px;
     transform: translateX(-5%);
+    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
@@ -268,7 +272,7 @@
   }
 }
 
-.example__image--cat-fat {
+.cat-fat {
   @media (min-width: $tablet-width) {
     max-width: unset;
   }
@@ -283,7 +287,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin: 28px auto 0 auto;
+    margin: 25px auto 0 auto;
     padding: 0 69px 70px 67px;
     width: 572px;
   }
@@ -291,6 +295,8 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
     grid-row-start: 3;
+    padding-bottom: 21px;
+    margin-top: 17px;
   }
 }
 
@@ -320,9 +326,11 @@
 
     &:hover {
       border-bottom: 1px solid $special-opacity-hover-black;
+      background-color: inherit;
     }
 
     &:active {
+      color: $basic-black;
       border-bottom: none;
     }
 

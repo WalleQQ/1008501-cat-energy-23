@@ -14,7 +14,7 @@
 .catalog__heading {
   margin: 0;
   padding: 0 20px;
-  margin-top: 27px;
+  margin-top: 29px;
   padding-bottom: 38px;
   font-size: 36px;
   line-height: 36px;
@@ -23,7 +23,7 @@
   border-bottom: 1px solid $special-border-grey;
 
   @media (min-width: $tablet-width) {
-    margin-top: 51px;
+    margin-top: 60px;
     padding: 0;
     margin-bottom: 82px;
     font-size: 60px;
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 59px;
+    margin-top: 74px;
     margin-bottom: 84px;
   }
 }
@@ -131,7 +131,7 @@
 
 .catalog__product-title {
   margin: 0;
-  margin-top: 19px;
+  margin-top: 22px;
   margin-bottom: 14px;
   width: 76px;
   font-size: 16px;
@@ -150,7 +150,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    margin: 46px auto 23px auto;
+    margin: 48px auto 23px auto;
   }
 }
 
@@ -196,7 +196,7 @@
 
 .catalog__product-button {
   grid-column: 1 / -1;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 93px;
@@ -273,6 +273,15 @@
   padding: 10px 94px;
   background: $basic-grey;
   color: $special-dark-grey;
+
+  &:hover {
+    background-color: $special-hover-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: $special-dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
