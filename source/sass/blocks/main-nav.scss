@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1220px;
-  padding: 10px 20px 17px 20px;
+  padding: 10px 20px 13px 20px;
   border-bottom: 1px solid $special_border-grey;
 
   &--nojs {
@@ -17,13 +17,13 @@
 
   @media (min-width: $tablet-width) {
     width: 92%;
-    padding: 26px 30px 10px 30px;
+    padding: 26px 30px 0 30px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 85%;
-    padding: 53px 110px 17px 110px;
+    padding: 53px 110px 0 110px;
   }
 }
 
@@ -75,7 +75,7 @@
 .main-nav__menu {
   display: none;
   position: absolute;
-  top: 67px;
+  top: 65px;
   left: 0;
   z-index: 1;
   background-color: $basic-white;
@@ -106,6 +106,9 @@
 }
 
 .main-nav__logo-title {
+  margin-top: 6px;
+  margin-right: 10px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -161,6 +164,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 18px;
     line-height: 24px;
@@ -187,12 +191,13 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    padding-bottom: 7px;
 
-    &:hover {
+    &:hover[href] {
       opacity: 0.6;
     }
 
-    &:active {
+    &:active[href] {
       opacity: 0.3;
     }
   }
@@ -202,6 +207,7 @@
     line-height: 30px;
     font-weight: 400;
     color: $basic-white;
+    padding-bottom: 6px;
 
     &--inner-page {
       color: $basic-black;
@@ -225,8 +231,6 @@
 }
 
 .main-nav__item-link:not([href]) {
-  padding-bottom: 10px;
-
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;
     width: 100%;

@@ -15,7 +15,7 @@
 .address__info {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding: 27px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 71px;
@@ -26,7 +26,7 @@
     z-index: 2;
     position: absolute;
     left: 110px;
-    top: 95px;
+    top: 99px;
     width: 570px;
     height: 201px;
     background-color: $basic-white;
@@ -44,8 +44,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 25px;
-    padding-top: 68px;
-    margin-bottom: 57px;
+    padding-top: 64px;
+    margin-bottom: 60px;
     width: 171px;
   }
 
@@ -68,8 +68,8 @@
   @media (min-width: $tablet-width) {
     width: 159px;
     font-size: 16px;
-    line-height: 20px;
-    padding-top: 64px;
+    line-height: 19px;
+    padding-top: 61px;
     text-align: right;
   }
 

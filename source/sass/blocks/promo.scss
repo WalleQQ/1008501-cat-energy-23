@@ -25,7 +25,7 @@
         rgba(104, 183, 56, 0.85) 50%
       ),
       url("../img/promo/promo-background-desktop.jpg") no-repeat 100% top;
-    background-size: 100%, 50%;
+    background-size: 100%, 51%;
 
     @media (min-resolution: 2dppx) {
       width: 100%;
@@ -35,7 +35,7 @@
           rgba(104, 183, 56, 0.85) 50%
         ),
         url("../img/promo/promo-background-desktop@2x.jpg") no-repeat 100% top;
-      background-size: 100%, 50%;
+      background-size: 100%, 51%;
     }
   }
 }
@@ -45,7 +45,7 @@
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 27px;
+  padding-top: 26px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -57,26 +57,24 @@
   @media (min-width: $desktop-width) {
     width: 85%;
     text-align: left;
-    margin-top: -124px;
+    margin-top: -132px;
     padding: 0 110px 185px 110px;
   }
 }
 
 .promo__product-image {
-  position: absolute;
-  top: 167px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     top: 199px;
     left: 50%;
-    transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%);
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 181px;
+    top: 211px;
     left: 50%;
     transform: translateX(-30%) translateY(-10%);
   }
@@ -92,8 +90,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 51px 207px 41px 87px;
-    white-space: nowrap;
+    margin: 59px 207px 41px 87px;
+    width: 414px;
     font-size: 60px;
     line-height: 60px;
     color: $basic-black;
@@ -101,18 +99,17 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 40px 80px;
-    padding-top: 223px;
+    padding-top: 239px;
   }
 }
 
 .promo__slogan {
   color: $basic-white;
-  white-space: nowrap;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 300px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -120,12 +117,15 @@
     line-height: 20px;
     margin-left: 87px;
     margin-bottom: 47px;
-
+    position: relative;
+    z-index: 2;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    margin-bottom: 52px;
+    max-width: 283px;
   }
 }
 
@@ -143,13 +143,13 @@
     margin-bottom: 526px;
     z-index: 2;
 
-    &:hover {
-      background-color: $special-hover-green;
-    }
+    // &:hover {
+    //   background-color: $special-hover-green;
+    // }
 
-    &:active {
-      color: $special-hover-white;
-    }
+    // &:active {
+    //   color: $special-hover-white;
+    // }
   }
 
   @media (min-width: $desktop-width) {

@@ -2,30 +2,35 @@
 <html class="page" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/favicon@152.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/favicon@180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="inner-page-body">
     <header class="inner-page-header">
       <nav class="main-nav main-nav--nojs">
-        <a class="main-nav__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
+        <a class="main-nav__logo" href="index.html"
+          ><picture
+            ><source
+              media="(min-width: 1440px)"
+              srcset="img/logo-desktop.svg" />
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-            <img src="img/logo-mobile.svg" alt="Логотип Cat Energy" />
-          </picture>
-        </a>
-        <a class="main-nav__logo-title" href="index.html">
-          <img
+            <img
+              src="img/logo-mobile.svg"
+              alt="Логотип Cat Energy" /></picture></a
+        ><a class="main-nav__logo-title" href="index.html"
+          ><img
             class="main-nav__logo-title-image"
             src="img/cat-energy-title.svg"
             width="101"
             height="18"
             alt="Cat Energy"
-          />
-        </a>
-        <div class="main-nav__toggle" type="button">
+        /></a>
+        <div class="main-nav__toggle">
           <span class="main-nav__toggle-item"></span>
           <span class="visually-hidden">Открыть меню</span>
         </div>
@@ -60,233 +65,298 @@
           <h1 class="catalog__heading">Каталог продукции</h1>
           <ul class="catalog__list">
             <li class="catalog__item" id="catalog-pro">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-1.png 1x, img/catalog/desktop/catalog-1@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-1.png 1x, img/catalog/tablet/catalog-1@2x.png 2x">
-              <img
-                class="catalog__item-image"
-                src="img/catalog/catalog-1.png"
-                srcset="img/catalog/catalog-1@2x.png 2x"
-                alt="Упакова с кормом Cat Energy"
-              />
-            </picture>
-            <div class="catalog__product-info">
-              <p class="catalog__product-title">Cat Energy PRO 500 г</p>
-              <ul class="catalog__product-list">
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Масса</p>
-                  <p class="catalog__product-content">500 г</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Вкус</p>
-                  <p class="catalog__product-content">Курица</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Цена</p>
-                  <p class="catalog__product-content">700 Р.</p>
-                </li>
-              </ul>
-            </div>
-              <a href="#" class="catalog__product-button button">Заказать</a>
-            </li>
-            <li class="catalog__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-2.png, img/catalog/desktop/catalog-2@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-2.png, img/catalog/tablet/catalog-2@2x.png 2x">
-              <img
-                class="catalog__item-image"
-                src="img/catalog/catalog-2.png"
-                srcset="img/catalog/catalog-2@2x.png 2x"
-                alt="Упакова с кормом Cat Energy"
-              />
-              </picture>
+              <picture
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/catalog/desktop/catalog-1.png,
+                    img/catalog/desktop/catalog-1@2x.png 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/tablet/catalog-1.png,
+                    img/catalog/tablet/catalog-1@2x.png 2x
+                  " />
+                <img
+                  class="catalog__item-image"
+                  src="img/catalog/catalog-1.png"
+                  srcset="img/catalog/catalog-1@2x.png 2x"
+                  alt="Упакова с кормом Cat Energy"
+              /></picture>
               <div class="catalog__product-info">
-              <p class="catalog__product-title">Cat Energy PRO 1000 г</p>
-              <ul class="catalog__product-list">
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Масса</p>
-                  <p class="catalog__product-content">1000 г</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Вкус</p>
-                  <p class="catalog__product-content">Курица</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Цена</p>
-                  <p class="catalog__product-content">1000 Р.</p>
-                </li>
-              </ul>
+                <p class="catalog__product-title">Cat Energy PRO 500 г</p>
+                <ul class="catalog__product-list">
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Масса</p>
+                    <p class="catalog__product-content">500 г</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Вкус</p>
+                    <p class="catalog__product-content">Курица</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Цена</p>
+                    <p class="catalog__product-content">700 Р.</p>
+                  </li>
+                </ul>
               </div>
               <a href="#" class="catalog__product-button button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-3.png, img/catalog/desktop/catalog-3@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-3.png, img/catalog/tablet/catalog-3@2x.png 2x">
+              <picture
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/catalog/desktop/catalog-2.png,
+                    img/catalog/desktop/catalog-2@2x.png 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/tablet/catalog-2.png,
+                    img/catalog/tablet/catalog-2@2x.png 2x
+                  " />
                 <img
-                class="catalog__item-image"
-                src="img/catalog/catalog-3.png"
-                srcset="img/catalog/catalog-3@2x.png 2x"
-                alt="Упакова с кормом Cat Energy"
-              />
-              </picture>
+                  class="catalog__item-image"
+                  src="img/catalog/catalog-2.png"
+                  srcset="img/catalog/catalog-2@2x.png 2x"
+                  alt="Упакова с кормом Cat Energy"
+              /></picture>
               <div class="catalog__product-info">
-              <p class="catalog__product-title">Cat Energy PRO 500 г</p>
-              <ul class="catalog__product-list">
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Масса</p>
-                  <p class="catalog__product-content">500 г</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Вкус</p>
-                  <p class="catalog__product-content">Рыба</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Цена</p>
-                  <p class="catalog__product-content">700 Р.</p>
-                </li>
-              </ul>
+                <p class="catalog__product-title">Cat Energy PRO 1000 г</p>
+                <ul class="catalog__product-list">
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Масса</p>
+                    <p class="catalog__product-content">1000 г</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Вкус</p>
+                    <p class="catalog__product-content">Курица</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Цена</p>
+                    <p class="catalog__product-content">1000 Р.</p>
+                  </li>
+                </ul>
               </div>
               <a href="#" class="catalog__product-button button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-4.png, img/catalog/desktop/catalog-4@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-4.png, img/catalog/tablet/catalog-4@2x.png 2x">
+              <picture
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/catalog/desktop/catalog-3.png,
+                    img/catalog/desktop/catalog-3@2x.png 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/tablet/catalog-3.png,
+                    img/catalog/tablet/catalog-3@2x.png 2x
+                  " />
                 <img
-                class="catalog__item-image"
-                src="img/catalog/catalog-4.png"
-                srcset="img/catalog/catalog-4@2x.png 2x"
-                alt="Упакова с кормом Cat Energy"
-              />
-              </picture>
+                  class="catalog__item-image"
+                  src="img/catalog/catalog-3.png"
+                  srcset="img/catalog/catalog-3@2x.png 2x"
+                  alt="Упакова с кормом Cat Energy"
+              /></picture>
               <div class="catalog__product-info">
-              <p class="catalog__product-title">Cat Energy PRO 1000 г</p>
-              <ul class="catalog__product-list">
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Масса</p>
-                  <p class="catalog__product-content">1000 г</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Вкус</p>
-                  <p class="catalog__product-content">Рыба</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Цена</p>
-                  <p class="catalog__product-content">1000 Р.</p>
-                </li>
-              </ul>
+                <p class="catalog__product-title">Cat Energy PRO 500 г</p>
+                <ul class="catalog__product-list">
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Масса</p>
+                    <p class="catalog__product-content">500 г</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Вкус</p>
+                    <p class="catalog__product-content">Рыба</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Цена</p>
+                    <p class="catalog__product-content">700 Р.</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="catalog__product-button button">Заказать</a>
+            </li>
+            <li class="catalog__item">
+              <picture
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/catalog/desktop/catalog-4.png,
+                    img/catalog/desktop/catalog-4@2x.png 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/tablet/catalog-4.png,
+                    img/catalog/tablet/catalog-4@2x.png 2x
+                  " />
+                <img
+                  class="catalog__item-image"
+                  src="img/catalog/catalog-4.png"
+                  srcset="img/catalog/catalog-4@2x.png 2x"
+                  alt="Упакова с кормом Cat Energy"
+              /></picture>
+              <div class="catalog__product-info">
+                <p class="catalog__product-title">Cat Energy PRO 1000 г</p>
+                <ul class="catalog__product-list">
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Масса</p>
+                    <p class="catalog__product-content">1000 г</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Вкус</p>
+                    <p class="catalog__product-content">Рыба</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Цена</p>
+                    <p class="catalog__product-content">1000 Р.</p>
+                  </li>
+                </ul>
               </div>
               <a href="#" class="catalog__product-button button">Заказать</a>
             </li>
             <li class="catalog__item" id="catalog-slim">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-5.png, img/catalog/desktop/catalog-5@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-5.png, img/catalog/tablet/catalog-5@2x.png 2x">
+              <picture
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/catalog/desktop/catalog-5.png,
+                    img/catalog/desktop/catalog-5@2x.png 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/tablet/catalog-5.png,
+                    img/catalog/tablet/catalog-5@2x.png 2x
+                  " />
                 <img
-                class="catalog__item-image"
-                src="img/catalog/catalog-5.png"
-                srcset="img/catalog/catalog-5@2x.png 2x"
-                alt="Упакова с кормом Cat Energy"
-              />
-              </picture>
+                  class="catalog__item-image"
+                  src="img/catalog/catalog-5.png"
+                  srcset="img/catalog/catalog-5@2x.png 2x"
+                  alt="Упакова с кормом Cat Energy"
+              /></picture>
               <div class="catalog__product-info">
-              <p class="catalog__product-title">Cat Energy slim 500 г</p>
-              <ul class="catalog__product-list">
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Масса</p>
-                  <p class="catalog__product-content">500 г</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Вкус</p>
-                  <p class="catalog__product-content">Гречка</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Цена</p>
-                  <p class="catalog__product-content">400 Р.</p>
-                </li>
-              </ul>
+                <p class="catalog__product-title">Cat Energy slim 500 г</p>
+                <ul class="catalog__product-list">
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Масса</p>
+                    <p class="catalog__product-content">500 г</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Вкус</p>
+                    <p class="catalog__product-content">Гречка</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Цена</p>
+                    <p class="catalog__product-content">400 Р.</p>
+                  </li>
+                </ul>
               </div>
               <a href="#" class="catalog__product-button button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-6.png, img/catalog/desktop/catalog-6@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-6.png, img/catalog/tablet/catalog-6@2x.png 2x">
+              <picture
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/catalog/desktop/catalog-6.png,
+                    img/catalog/desktop/catalog-6@2x.png 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/tablet/catalog-6.png,
+                    img/catalog/tablet/catalog-6@2x.png 2x
+                  " />
                 <img
-                class="catalog__item-image"
-                src="img/catalog/catalog-6.png"
-                srcset="img/catalog/catalog-6@2x.png 2x"
-                alt="Упакова с кормом Cat Energy"
-              />
-              </picture>
+                  class="catalog__item-image"
+                  src="img/catalog/catalog-6.png"
+                  srcset="img/catalog/catalog-6@2x.png 2x"
+                  alt="Упакова с кормом Cat Energy"
+              /></picture>
               <div class="catalog__product-info">
-              <p class="catalog__product-title">Cat Energy slim 1000 г</p>
-              <ul class="catalog__product-list">
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Масса</p>
-                  <p class="catalog__product-content">1000 г</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Вкус</p>
-                  <p class="catalog__product-content">Гречка</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Цена</p>
-                  <p class="catalog__product-content">700 Р.</p>
-                </li>
-              </ul>
+                <p class="catalog__product-title">Cat Energy slim 1000 г</p>
+                <ul class="catalog__product-list">
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Масса</p>
+                    <p class="catalog__product-content">1000 г</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Вкус</p>
+                    <p class="catalog__product-content">Гречка</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Цена</p>
+                    <p class="catalog__product-content">700 Р.</p>
+                  </li>
+                </ul>
               </div>
               <a href="#" class="catalog__product-button button">Заказать</a>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog/desktop/catalog-7.png, img/catalog/desktop/catalog-7@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/tablet/catalog-7.png, img/catalog/tablet/catalog-7@2x.png 2x">
+              <picture
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    img/catalog/desktop/catalog-7.png,
+                    img/catalog/desktop/catalog-7@2x.png 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/tablet/catalog-7.png,
+                    img/catalog/tablet/catalog-7@2x.png 2x
+                  " />
                 <img
-                class="catalog__item-image"
-                src="img/catalog/catalog-7.png"
-                srcset="img/catalog/catalog-7@2x.png 2x"
-                alt="Упакова с кормом Cat Energy"
-              />
-              </picture>
+                  class="catalog__item-image"
+                  src="img/catalog/catalog-7.png"
+                  srcset="img/catalog/catalog-7@2x.png 2x"
+                  alt="Упакова с кормом Cat Energy"
+              /></picture>
               <div class="catalog__product-info">
-              <p class="catalog__product-title">Cat Energy slim 500 г</p>
-              <ul class="catalog__product-list">
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Масса</p>
-                  <p class="catalog__product-content">500 г</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Вкус</p>
-                  <p class="catalog__product-content">Рис</p>
-                </li>
-                <li class="catalog__product-item">
-                  <p class="catalog__product-content">Цена</p>
-                  <p class="catalog__product-content">500 Р.</p>
-                </li>
-              </ul>
+                <p class="catalog__product-title">Cat Energy slim 500 г</p>
+                <ul class="catalog__product-list">
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Масса</p>
+                    <p class="catalog__product-content">500 г</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Вкус</p>
+                    <p class="catalog__product-content">Рис</p>
+                  </li>
+                  <li class="catalog__product-item">
+                    <p class="catalog__product-content">Цена</p>
+                    <p class="catalog__product-content">500 Р.</p>
+                  </li>
+                </ul>
               </div>
               <a href="#" class="catalog__product-button button">Заказать</a>
             </li>
-
-          <li class="catalog__item catalog__item--show-more">
-            <button class="catalog__show-more-button"></button>
-            <p class="catalog__show-more-content">
-              Показать еще 100500 товаров
-            </p>
-            <p class="catalog__show-more-text">
-              На самом деле вкусов гораздо больше!
-            </p>
-            <a href="" class="catalog__show-all-button button">Показать все</a>
-      </li>
-    </ul>
+            <li class="catalog__item catalog__item--show-more">
+              <div class="catalog__show-more-button"></div>
+              <p class="catalog__show-more-content">
+                Показать еще 100500 товаров
+              </p>
+              <p class="catalog__show-more-text">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <a href="" class="catalog__show-all-button button"
+                >Показать все</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="additional-product">
+        <h2 class="additional-product__heading inner-page-title">
+          Дополнительные товары
+        </h2>
         <div class="additional-product__wrapper">
-          <h2 class="additional-product__heading inner-page-title">
-            Дополнительные товары
-          </h2>
           <ul class="additional-product__list">
             <li class="additional-product__item">
               <p class="additional-product__title">Сахарозаменитель</p>
@@ -306,7 +376,6 @@
               <p class="additional-product__content">100 Р.</p>
               <a href="#" class="additional-product__button button">Заказать</a>
             </li>
-
             <li class="additional-product__item">
               <p class="additional-product__title">Витамины</p>
               <p class="additional-product__content">1 упаковка (30 г)</p>
@@ -316,9 +385,7 @@
           </ul>
           <div class="additional-product__event">
             <p class="additional-product__event-content">
-              Закажите все<br />
-              и получите чехол для<br />
-              кота в подарок!
+              Закажите все<br />и получите чехол для<br />кота в подарок!
             </p>
           </div>
         </div>
@@ -330,13 +397,12 @@
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <div class="address__info">
             <p class="address__text">
-              Приглашаем<br />
-              к сотрудничеству дилеров!
+              Приглашаем<br />к сотрудничеству дилеров!
             </p>
-            <address class="address__address">
+            <p class="address__address">
               ул. Большая Конюшенная, д. 19/8
               <span class="address__city">Санкт-Петербург</span>
-            </address>
+            </p>
           </div>
           <div class="map">
             <iframe
@@ -352,9 +418,9 @@
       <section class="socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <div class="socials__wrapper">
-          <a href="#" class="socials__logo-link">
-            <img src="img/footer-logo.svg" alt="Cat Energy" />
-          </a>
+          <a href="#" class="socials__logo-link"
+            ><img src="img/footer-logo.svg" alt="Cat Energy"
+          /></a>
           <div class="socials__list-wrapper">
             <ul class="socials__list">
               <li class="socials__item">
@@ -362,27 +428,22 @@
                   ><svg
                     class="socials__item-icon socials__item-icon--vkontakte"
                   >
-                    <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
-                  </svg>
-                </a>
+                    <use xlink:href="img/sprite.svg#icon-vkontakte"></use></svg
+                ></a>
               </li>
               <li class="socials__item">
                 <a class="socials__item-link" href="#" aria-label="Instagram"
                   ><svg
                     class="socials__item-icon socials__item-icon--instagram"
                   >
-                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use></svg
+                ></a>
               </li>
               <li class="socials__item">
                 <a class="socials__item-link" href="#" aria-label="Facebook"
-                  ><svg
-                    class="socials__item-icon socials__item-icon--facebook"
-                  >
-                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
+                  ><svg class="socials__item-icon socials__item-icon--facebook">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use></svg
+                ></a>
               </li>
             </ul>
           </div>
@@ -400,19 +461,17 @@
               href="https://htmlacademy.ru/intensive/adaptive"
               target="_blank"
               aria-label="Логотип htmlacademy"
-            >
-              <svg
+              ><svg
                 class="socials__copyright-icon socials__item-icon"
                 width="27"
                 height="34"
               >
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
-              </svg>
-            </a>
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg
+            ></a>
           </div>
         </div>
       </section>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>
