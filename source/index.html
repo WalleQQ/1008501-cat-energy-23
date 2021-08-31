@@ -59,8 +59,28 @@
         <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное<br />питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <picture
-            ><source
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/promo/promo-product-desktop.webp,
+                img/promo/promo-product-desktop@2x.webp 2x
+              " />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/promo/promo-product-tablet.webp,
+                img/promo/promo-product-tablet@2x.webp 2x
+              " />
+            <source
+              type="image/webp"
+              srcset="
+                img/promo/promo-product.webp,
+                img/promo/promo-product@2x.webp 2x
+              " />
+            <source
               media="(min-width: 1440px)"
               srcset="
                 img/promo/promo-product-desktop.png,
@@ -134,8 +154,8 @@
             </li>
             <li class="about-product__item about-product__item--alarm">
               <p class="about-product__item-content">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего
-                питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему<br />
+                вашего питомца!
               </p>
             </li>
           </ul>
@@ -170,8 +190,21 @@
           </div>
           <div class="example__before-after-slider">
             <div class="example__image-before">
-              <picture
-                ><source
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/example/cat-fat.webp,
+                    img/example/cat-fat@2x.webp 2x
+                  " />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/example/cat-fat-min.webp,
+                    img/example/cat-fat-min@2x.webp 2x
+                  " />
+                <source
                   media="(min-width: 768px)"
                   srcset="
                     img/example/cat-fat.png,
@@ -186,8 +219,21 @@
               /></picture>
             </div>
             <div class="example__image-after" id="after-image">
-              <picture
-                ><source
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/example/cat-skinny.webp,
+                    img/example/cat-skinny@2x.webp 2x
+                  " />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/example/cat-skinny-min.webp,
+                    img/example/cat-skinny-min@2x.webp 2x
+                  " />
+                <source
                   media="(min-width: 768px)"
                   srcset="
                     img/example/cat-skinny.png,
