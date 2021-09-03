@@ -52,8 +52,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    column-gap: 95px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 75px;
     row-gap: 0;
   }
 }
@@ -73,7 +74,7 @@
     margin-bottom: 42px;
   }
 
-  &::before {
+  &--leaf::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -81,56 +82,53 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-color: $basic-green;
+    background: url("../img/about-product/icon_leaf.svg") no-repeat 50% 50%
+      $basic-green;
   }
 
-  &--leaf::after {
+  &--tub::before {
     content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 15px;
-    width: 30px;
-    height: 32px;
-    background: url("../img/about-product/icon_leaf.svg") no-repeat;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/about-product/icon_tub.svg") no-repeat 50% 50%
+      $basic-green;
   }
 
-  &--tub::after {
+  &--eat::before {
     content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 15px;
-    width: 29px;
-    height: 31px;
-    background: url("../img/about-product/icon_tub.svg") no-repeat;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/about-product/icon_eat.svg") no-repeat 50% 50%
+      $basic-green;
   }
 
-  &--eat::after {
+  &--alarm::before {
     content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 18px;
-    width: 25px;
-    height: 30px;
-    background: url("../img/about-product/icon_eat.svg") no-repeat;
-  }
-
-  &--alarm::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 14px;
-    width: 32px;
-    height: 33px;
-    background: url("../img/about-product/icon_alarm.svg") no-repeat;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/about-product/icon_alarm.svg") no-repeat 50% 50%
+      $basic-green;
   }
 
   @media (min-width: $tablet-width) {
-    width: 230px;
+    width: 245px;
     padding: 151px 0 57px 0;
+
+    &:first-child {
+      width: 230px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -140,7 +138,7 @@
       margin-bottom: 0;
     }
 
-    &::before {
+    &--leaf::before {
       content: "";
       position: absolute;
       top: 40px;
@@ -148,56 +146,49 @@
       transform: translateY(0);
       width: 80px;
       height: 80px;
-      background-color: $basic-green;
+      background: url("../img/about-product/icon_leaf.svg") no-repeat 50% 50%
+        $basic-green;
     }
 
-    &--leaf::after {
+    &--tub::before {
       content: "";
       position: absolute;
-      top: 67px;
+      top: 40px;
+      left: 0;
       transform: translateY(0);
-      left: 27px;
-      width: 30px;
-      height: 32px;
-      background: url("../img/about-product/icon_leaf.svg") no-repeat;
+      width: 80px;
+      height: 80px;
+      background: url("../img/about-product/icon_tub.svg") no-repeat 50% 50%
+        $basic-green;
     }
 
-    &--tub::after {
+    &--eat::before {
       content: "";
       position: absolute;
-      top: 64px;
+      top: 40px;
+      left: 0;
       transform: translateY(0);
-      left: 26px;
-      width: 29px;
-      height: 31px;
-      background: url("../img/about-product/icon_tub.svg") no-repeat;
+      width: 80px;
+      height: 80px;
+      background: url("../img/about-product/icon_eat.svg") no-repeat 50% 50%
+        $basic-green;
     }
 
-    &--eat::after {
+    &--alarm::before {
       content: "";
       position: absolute;
-      top: 65px;
+      top: 40px;
+      left: 0;
       transform: translateY(0);
-      left: 28px;
-      width: 25px;
-      height: 30px;
-      background: url("../img/about-product/icon_eat.svg") no-repeat;
-    }
-
-    &--alarm::after {
-      content: "";
-      position: absolute;
-      top: 65px;
-      transform: translateY(0);
-      left: 24px;
-      width: 32px;
-      height: 33px;
-      background: url("../img/about-product/icon_alarm.svg") no-repeat;
+      width: 80px;
+      height: 80px;
+      background: url("../img/about-product/icon_alarm.svg") no-repeat 50% 50%
+        $basic-green;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 230px;
+    width: 100%;
     padding: 151px 0 57px 0;
   }
 }
@@ -223,5 +214,13 @@
       line-height: 280px;
       color: $basic-grey;
     }
+  }
+}
+
+.about-product__item-content br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

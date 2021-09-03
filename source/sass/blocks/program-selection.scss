@@ -123,6 +123,11 @@
   text-transform: uppercase;
   margin-right: 12px;
 
+  &--weight,
+  &--age {
+    margin-right: 16px;
+  }
+
   &--email {
     margin: 0;
     margin-right: 11px;
@@ -142,8 +147,9 @@
     line-height: 30px;
     margin-right: 14px;
 
+    &--weight,
     &--age {
-      margin-right: 14px;
+      margin-right: 18px;
     }
 
     &--email {
@@ -152,6 +158,20 @@
 
     &--phone {
       margin-right: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--name {
+      margin-right: 18px;
+    }
+
+    &--weight {
+      margin-right: 20px;
+    }
+
+    &--age {
+      margin-right: 15px;
     }
   }
 }
@@ -470,6 +490,7 @@
   margin-bottom: 23px;
   padding: 8px 12px;
   resize: none;
+  text-transform: uppercase;
 
   &::placeholder {
     color: $special-dark-grey;
@@ -615,8 +636,7 @@
 }
 
 .program-selection__checkbox-input:disabled + .program-selection__checkbox-text,
-.program-selection__checkbox-input:disabled
-  + .program-selection__checkbox-text::after {
+.program-selection__checkbox-input:disabled + .program-selection__checkbox-text::after {
   opacity: 0.3;
 
   &::before {
@@ -624,8 +644,7 @@
   }
 }
 
-.program-selection__checkbox-input:checked
-  + .program-selection__checkbox-text::after {
+.program-selection__checkbox-input:checked + .program-selection__checkbox-text::after {
   content: "";
   position: absolute;
   background: url("../img/program-selection/checkbox-active.svg") no-repeat 50%
@@ -651,7 +670,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 174px 72px 71px;
+    padding: 0 174px 76px 71px;
   }
 
   @media (min-width: $desktop-width) {

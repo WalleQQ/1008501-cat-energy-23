@@ -63,15 +63,13 @@
 }
 
 .promo__product-image {
-  position: absolute;
-  top: 167px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     top: 199px;
     left: 50%;
-    transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%);
     z-index: 1;
   }
 
@@ -93,7 +91,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 59px 207px 41px 87px;
-    white-space: nowrap;
+    width: 414px;
     font-size: 60px;
     line-height: 60px;
     color: $basic-black;
@@ -107,12 +105,11 @@
 
 .promo__slogan {
   color: $basic-white;
-  white-space: nowrap;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 306px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -120,13 +117,15 @@
     line-height: 20px;
     margin-left: 87px;
     margin-bottom: 47px;
-
+    position: relative;
+    z-index: 2;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     margin-bottom: 52px;
+    max-width: 283px;
   }
 }
 
