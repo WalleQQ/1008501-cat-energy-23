@@ -636,8 +636,7 @@
 }
 
 .program-selection__checkbox-input:disabled + .program-selection__checkbox-text,
-.program-selection__checkbox-input:disabled
-  + .program-selection__checkbox-text::after {
+.program-selection__checkbox-input:disabled + .program-selection__checkbox-text::after {
   opacity: 0.3;
 
   &::before {
@@ -645,8 +644,7 @@
   }
 }
 
-.program-selection__checkbox-input:checked
-  + .program-selection__checkbox-text::after {
+.program-selection__checkbox-input:checked + .program-selection__checkbox-text::after {
   content: "";
   position: absolute;
   background: url("../img/program-selection/checkbox-active.svg") no-repeat 50%
