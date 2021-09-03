@@ -126,6 +126,10 @@
     width: 245px;
     padding: 151px 0 57px 0;
 
+    &:first-child {
+      width: 230px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0;
     }

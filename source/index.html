@@ -162,95 +162,106 @@
         </div>
       </section>
       <section class="example">
+        <div class="example__title-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+        </div>
         <div class="example__wrapper">
-          <div class="example__info">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__content">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              в день.
-            </p>
+          <div class="example__wrapper-left">
+            <div class="example__info">
+              <p class="example__content">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих
+                тренировок! При этом он не менял своих привычек и по-прежнему
+                спит по 16 часов в день.
+              </p>
+            </div>
+            <div class="example__list-wrapper">
+              <ul class="example__list">
+                <li class="example-item">
+                  <p class="example__item-resume">5 КГ</p>
+                  <p class="example__item-text">Снижение веса</p>
+                </li>
+                <li class="example-item">
+                  <p class="example__item-resume">60 ДНЕЙ</p>
+                  <p class="example__item-text">Затрачено времени</p>
+                </li>
+              </ul>
+              <p class="example__cost">
+                Затраты на питание:
+                <span class="example__cost-item">15 000 РУБ.</span>
+              </p>
+            </div>
           </div>
-          <div class="example__list-wrapper">
-            <ul class="example__list">
-              <li class="example-item">
-                <p class="example__item-resume">5 КГ</p>
-                <p class="example__item-text">Снижение веса</p>
-              </li>
-              <li class="example-item">
-                <p class="example__item-resume">60 ДНЕЙ</p>
-                <p class="example__item-text">Затрачено времени</p>
-              </li>
-            </ul>
-            <p class="example__cost">
-              Затраты на питание:
-              <span class="example__cost-item">15 000 РУБ.</span>
-            </p>
-          </div>
-          <div class="example__before-after-slider">
-            <div class="example__image-before">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-fat.webp,
-                    img/example/cat-fat@2x.webp 2x
-                  " />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/example/cat-fat-min.webp,
-                    img/example/cat-fat-min@2x.webp 2x
-                  " />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-fat.png,
-                    img/example/cat-fat@2x.png 2x
-                  " />
-                <img
-                  class="cat-fat"
-                  src="img/example/cat-fat-min.png"
-                  srcset="img/example/cat-fat-min@2x.png"
-                  alt="Толс
+          <div class="example__wrapper-right">
+            <div class="example__before-after-slider">
+              <div class="example__image-item example__image-before">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-fat.webp,
+                      img/example/cat-fat@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/example/cat-fat-min.webp,
+                      img/example/cat-fat-min@2x.webp 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-fat.png,
+                      img/example/cat-fat@2x.png 2x
+                    " />
+                  <img
+                    class="cat-fat"
+                    src="img/example/cat-fat-min.png"
+                    srcset="img/example/cat-fat-min@2x.png"
+                    alt="Толс
             тый кот"
-              /></picture>
+                /></picture>
+              </div>
+              <div
+                class="example__image-item example__image-after"
+                id="after-image"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-skinny.webp,
+                      img/example/cat-skinny@2x.webp 2x
+                    " />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/example/cat-skinny-min.webp,
+                      img/example/cat-skinny-min@2x.webp 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/example/cat-skinny.png,
+                      img/example/cat-skinny@2x.png 2x
+                    " />
+                  <img
+                    class="cat-skinny"
+                    src="img/example/cat-skinny-min.png"
+                    srcset="img/example/cat-skinny-min@2x.png 2x"
+                    alt="Кот до"
+                /></picture>
+              </div>
+              <div class="example__before-after">
+                <button class="example__before-button button">Было</button>
+                <div class="example__scale">
+                  <div class="example__bar"></div>
+                </div>
+                <button class="example__after-button button">Стало</button>
+              </div>
             </div>
-            <div class="example__image-after" id="after-image">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-skinny.webp,
-                    img/example/cat-skinny@2x.webp 2x
-                  " />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/example/cat-skinny-min.webp,
-                    img/example/cat-skinny-min@2x.webp 2x
-                  " />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/example/cat-skinny.png,
-                    img/example/cat-skinny@2x.png 2x
-                  " />
-                <img
-                  class="cat-skinny"
-                  src="img/example/cat-skinny-min.png"
-                  srcset="img/example/cat-skinny-min@2x.png 2x"
-                  alt="Кот до"
-              /></picture>
-            </div>
-          </div>
-          <div class="example__before-after">
-            <button class="example__before-button button">Было</button>
-            <div class="example__scale"><div class="example__bar"></div></div>
-            <button class="example__after-button button">Стало</button>
           </div>
         </div>
       </section>
@@ -267,15 +278,15 @@
                 <span class="address__city">Санкт-Петербург</span>
               </p>
             </div>
-            <div class="map">
-              <iframe
-                class="address__map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627404846940!5m2!1sru!2sru"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
+          </div>
+          <div class="map">
+            <iframe
+              class="address__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627404846940!5m2!1sru!2sru"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </section>
         <section class="socials">
@@ -292,7 +303,7 @@
                       class="socials__item-icon socials__item-icon--vkontakte"
                     >
                       <use
-                        xlink:href="img/sprite.svg#icon-vkontakte"
+                        xlink:href="img/sprite.svg#icon_vkontakte"
                       ></use></svg
                   ></a>
                 </li>
@@ -302,7 +313,7 @@
                       class="socials__item-icon socials__item-icon--instagram"
                     >
                       <use
-                        xlink:href="img/sprite.svg#icon-instagram"
+                        xlink:href="img/sprite.svg#icon_instagram"
                       ></use></svg
                   ></a>
                 </li>
@@ -311,7 +322,7 @@
                     ><svg
                       class="socials__item-icon socials__item-icon--facebook"
                     >
-                      <use xlink:href="img/sprite.svg#icon-facebook"></use></svg
+                      <use xlink:href="img/sprite.svg#icon_facebook"></use></svg
                   ></a>
                 </li>
               </ul>
@@ -335,7 +346,7 @@
                   width="27"
                   height="34"
                 >
-                  <use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg
+                  <use xlink:href="img/sprite.svg#htmlacademy"></use></svg
               ></a>
             </div>
           </div>

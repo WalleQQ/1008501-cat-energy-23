@@ -8,8 +8,13 @@
 
 .address__wrapper {
   position: relative;
+  max-width: 1220px;
   margin: 0 auto;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .address__info {
