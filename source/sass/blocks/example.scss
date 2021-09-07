@@ -419,6 +419,7 @@
   height: 6px;
   background: $basic-green;
   border-radius: 6px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     position: absolute;
